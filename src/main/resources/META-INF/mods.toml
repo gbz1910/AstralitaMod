@@ -3,15 +3,19 @@ loaderVersion="[47,)"
 license="MIT"
 [[mods]]
 modId="astralita"
-version="${file.jarVersion}"
-displayName="Astralita"
+version="1.1.0"
+displayName="Crimsonita"
 authors="GB"
-description='''Astralita: material raro do End superior a Netherite.'''
+description='''Crimsonita: um cristal carmesim extremamente raro das ilhas externas do End, superior a Netherite.'''
 [[dependencies.astralita]]
 modId="forge"
 mandatory=true
-versionRange="[47.4.0,)";ordering="NONE";side="BOTH"
+versionRange="[47.4.0,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.astralita]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.20.1,1.21)";ordering="NONE";side="BOTH"
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
