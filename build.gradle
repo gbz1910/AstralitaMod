@@ -1,0 +1,8 @@
+plugins { id 'eclipse'; id 'idea'; id 'maven-publish'; id 'net.minecraftforge.gradle' version '[6.0,6.2)' }
+version='1.0.0'; group='com.gb.astralita'; base { archivesName='astralita-forge-1.20.1' }
+java.toolchain.languageVersion=JavaLanguageVersion.of(17)
+minecraft { mappings channel:'official', version:'1.20.1'; runs { client { workingDirectory project.file('run'); mods { astralita { source sourceSets.main } } }; server { workingDirectory project.file('run'); args '--nogui'; mods { astralita { source sourceSets.main } } } } }
+repositories { mavenCentral() }
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.0' }
+tasks.named('processResources', ProcessResources).configure { var p=[minecraft_version:'1.20.1',forge_version:'47.4.0',mod_version:project.version]; inputs.properties p; filesMatching(['META-INF/mods.toml','pack.mcmeta']) { expand p+[project:project] } }
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8' }

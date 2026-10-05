@@ -1,0 +1,3 @@
+package com.gb.astralita.material;
+import com.gb.astralita.registry.ModItems;import net.minecraft.tags.BlockTags;import net.minecraft.world.item.Tier;import net.minecraft.world.item.crafting.Ingredient;
+public class AstralitaTier implements Tier{public static final AstralitaTier INSTANCE=new AstralitaTier();public int getUses(){return 2800;}public float getSpeed(){return 10;}public float getAttackDamageBonus(){return 4;}public int getLevel(){return 5;}public int getEnchantmentValue(){return 18;}public Ingredient getRepairIngredient(){return Ingredient.of(ModItems.BARRA_ASTRALITA.get());}public net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> getTag(){return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;}}
