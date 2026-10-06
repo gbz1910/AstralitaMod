@@ -1,5 +1,6 @@
 package com.gb.astralita.material;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.DyeableArmorItem;
 import net.minecraft.world.item.ItemStack;
 public class CrimsonitaArmorItem extends DyeableArmorItem{
