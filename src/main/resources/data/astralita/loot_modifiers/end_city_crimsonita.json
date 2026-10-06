@@ -1,0 +1,1 @@
+{"type":"forge:add_items","conditions":[{"condition":"minecraft:loot_table_id","loot_table_id":"minecraft:chests/end_city_treasure"},{"condition":"minecraft:random_chance","chance":0.20}],"items":["astralita:fragmento_astral"]}
